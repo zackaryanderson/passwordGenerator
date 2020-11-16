@@ -27,10 +27,10 @@ function generatePassword() {
   }
   length = lengthPassword(); //outputs desired password length as an integer
 
-  var confirmSpecial = window.confirm("Would you like special characters to be included?");
-  var confirmCapital = window.confirm("Would you like capital letters to be included?");
-  var confirmLower = window.confirm("Would you like lower case letters to be included?");
-  var confirmNumber = window.confirm("Would you like numbers to be included?");
+  var confirmSpecial = window.confirm("Would you like special characters to be included?\nPress OK to include.\nPress CANCEL to remove");
+  var confirmCapital = window.confirm("Would you like capital letters to be included?\nPress OK to include.\nPress CANCEL to remove");
+  var confirmLower = window.confirm("Would you like lower case letters to be included?\nPress OK to include.\nPress CANCEL to remove");
+  var confirmNumber = window.confirm("Would you like numbers to be included?\nPress OK to include.\nPress CANCEL to remove");
 
 
   //take user input and create password based off of their answers
@@ -262,7 +262,7 @@ function generatePassword() {
     }
   }
   else{
-    window.prompt("Please choose at least one character type.");
+    window.confirm("Please choose at least one character type.");
     generatePassword();
   }
 
