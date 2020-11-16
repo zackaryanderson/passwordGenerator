@@ -12,4 +12,4 @@
 [Password Generator](https://zackaryanderson.github.io/passwordGenerator/)
 
 ## Screenshot
-![Screenshot of Webpage](images/screenShot.png)
+![Screenshot of Webpage](Develop/images/screenShot.png)
