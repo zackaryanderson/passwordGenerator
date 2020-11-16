@@ -11,6 +11,7 @@ function generatePassword() {
   password = [""]; // empty password array
   //tell user what questions they are going to be asked to start thinking about beforehand
   window.confirm("Welcome to password generator! You are going to be asked for a desired password length and what characters you would like to include.");
+
   var lengthPassword = function () {
     //ask user to specify their desired length
     var length = window.prompt("Choose a size between 8 and 128 characters for your password.");
@@ -20,7 +21,8 @@ function generatePassword() {
     if (length > 7 && length < 129) {
       console.log(length); //show answer in log to make sure it is working
       return length;
-    } else {
+    } 
+    else {
       alert("Please enter a valid answer!");
       lengthPassword();
     }
